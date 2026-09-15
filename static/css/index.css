@@ -127,6 +127,10 @@ section img {
   text-align: justify;
 }
 
+.example-figure {
+  margin-top: 2.5rem;
+}
+
 .results-carousel {
   overflow: hidden;
 }
