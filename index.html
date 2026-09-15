@@ -157,7 +157,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Data</h2>
+        <h2 class="title is-3">Dataset</h2>
         <img src="static/images/data_mining.png" alt="Data pipeline"/>
         <p class="figure-caption">
           The two-stage pipeline for automated video processing. Step 1 illustrates the annotation process consisting of Qwen3.6VL-27B and other visual foundation models. Step 2 depicts the long-tail data analysis process. Long-tail samples are defined using distributional rarity and model-dependent trajectory error, and a teacher model performs reflective reasoning for structured failure attribution.
@@ -175,7 +175,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
-        <img src="static/images/wildnav.png" alt="Method overview"/>
+        <img class="figure-medium" src="static/images/wildnav.png" alt="Method overview"/>
         <p class="figure-caption">
           Detailed architecture of the proposed WILD-Nav model. It processes temporal video streams through a vision encoder, while a Large Language Model backbone processes the fused tokens to generate CoT reasoning. Finally, the action expert decodes the planning token into a trajectory.
         </p>
@@ -184,6 +184,40 @@
   </div>
 </section>
 <!-- End method -->
+
+
+<!-- Long-tail -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Long-Tail Evaluation</h2>
+        <img class="figure-medium" src="static/images/longtail.png" alt="Long-tail analysis"/>
+        <p class="figure-caption">
+          Failure attribution obtained by privileged reflection over the hard set. (a) Visualization of six representative HDBSCAN clusters in the hard set; gray points denote all remaining samples. (b) Cluster-specific reflection failure patterns. Bubble size represents failure support, and color indicates enrichment over the global baseline.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End long-tail -->
+
+
+<!-- Real-world -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Real-world</h2>
+        <img class="figure-medium" src="static/images/realworld.png" alt="Real-world experiments"/>
+        <p class="figure-caption">
+          Real-world navigation performance of our VLA model. Our model generates safe and reasonable trajectories (red) for various navigation tasks.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End real-world -->
 
 
 <!--BibTex citation -->
