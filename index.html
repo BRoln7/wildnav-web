@@ -141,6 +141,9 @@
       <div class="columns is-centered">
         <div class="column is-four-fifths has-text-centered">
           <img src="static/images/cover.png" alt="Cover"/>
+          <p class="figure-caption">
+            Overview of the proposed framework for scalable urban navigation VLA models. Our approach first collect worldwide web-scale street-walking videos as the dataset. A VLA model is then trained to perform end-to-end urban navigatioin planning. Finally, the reflection driven by a teacher model is introduced to analyze failure taxonomies.
+          </p>
         </div>
       </div>
     </div>
@@ -149,80 +152,38 @@
 <!-- End cover image -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+<!-- Data -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data</h2>
+        <img src="static/images/data_mining.png" alt="Data pipeline"/>
+        <p class="figure-caption">
+          The two-stage pipeline for automated video processing. Step 1 illustrates the annotation process consisting of Qwen3.6VL-27B and other visual foundation models. Step 2 depicts the long-tail data analysis process. Long-tail samples are defined using distributional rarity and model-dependent trajectory error, and a teacher model performs reflective reasoning for structured failure attribution.
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End data -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <img src="static/images/wildnav.png" alt="Method overview"/>
+        <p class="figure-caption">
+          Detailed architecture of the proposed WILD-Nav model. It processes temporal video streams through a vision encoder, while a Large Language Model backbone processes the fused tokens to generate CoT reasoning. Finally, the action expert decodes the planning token into a trajectory.
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+<!-- End method -->
 
 
 <!--BibTex citation -->

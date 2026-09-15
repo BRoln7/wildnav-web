@@ -110,6 +110,19 @@ body {
 .publication-body img {
 }
 
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.figure-caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+  text-align: justify;
+}
+
 .results-carousel {
   overflow: hidden;
 }
