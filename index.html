@@ -155,48 +155,85 @@
 <!-- End data -->
 
 
-<!-- Method -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
-        <img class="figure-medium" src="static/images/wildnav.png" alt="Method overview"/>
+<!-- Method and long-tail evaluation -->
+<section class="section hero is-light">
+  <div class="container is-max-widescreen">
+    <div class="analysis-grid">
+      <article class="analysis-panel" aria-labelledby="method-title">
+        <h2 id="method-title" class="title is-4">Method</h2>
+        <div class="analysis-figure">
+          <img src="static/images/wildnav.png" alt="Method overview"/>
+        </div>
         <p class="figure-caption">
           Detailed architecture of the proposed WILD-Nav model. It processes temporal video streams through a vision encoder, while a Large Language Model backbone processes the fused tokens to generate CoT reasoning. Finally, the action expert decodes the planning token into a trajectory.
         </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End method -->
-
-
-<!-- Long-tail -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Long-Tail Evaluation</h2>
-        <img class="figure-medium" src="static/images/longtail.png" alt="Long-tail analysis"/>
+      </article>
+      <article class="analysis-panel" aria-labelledby="longtail-title">
+        <h2 id="longtail-title" class="title is-4">Long-Tail Evaluation</h2>
+        <div class="analysis-figure">
+          <img src="static/images/longtail.png" alt="Long-tail analysis"/>
+        </div>
         <p class="figure-caption">
           Failure attribution obtained by privileged reflection over the hard set. (a) Visualization of six representative HDBSCAN clusters in the hard set; gray points denote all remaining samples. (b) Cluster-specific reflection failure patterns. Bubble size represents failure support, and color indicates enrichment over the global baseline.
         </p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
-<!-- End long-tail -->
+<!-- End method and long-tail evaluation -->
 
 
 <!-- Examples -->
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-11">
         <h2 class="title is-3">Examples</h2>
-        <img src="static/images/sample1.png" alt="Qualitative example 1"/>
-        <img class="example-figure" src="static/images/sample2.png" alt="Qualitative example 2"/>
+        <p class="examples-intro">Six sample figures showing video frames, predicted trajectories, student reasoning, and teacher reflection.</p>
+        <div class="examples-grid">
+        <figure class="case-figure">
+          <h3 class="title is-5">Sample 1</h3>
+          <a href="static/pdfs/figure_s2_cases.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Sample 1 as a PDF">
+            <img src="static/images/figure_s2_cases.png" alt="Two urban navigation cases with video frames, trajectories, student predictions, and teacher reflections" decoding="async"/>
+          </a>
+          <figcaption><a href="static/pdfs/figure_s2_cases.pdf" target="_blank" rel="noopener noreferrer">Open Sample 1</a></figcaption>
+        </figure>
+        <figure class="case-figure">
+          <h3 class="title is-5">Sample 2</h3>
+          <a href="static/pdfs/figure_s3_cases.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Sample 2 as a PDF">
+            <img src="static/images/figure_s3_cases.png" alt="Two urban navigation cases with video frames, trajectories, student predictions, and teacher reflections" loading="lazy" decoding="async"/>
+          </a>
+          <figcaption><a href="static/pdfs/figure_s3_cases.pdf" target="_blank" rel="noopener noreferrer">Open Sample 2</a></figcaption>
+        </figure>
+        <figure class="case-figure">
+          <h3 class="title is-5">Sample 3</h3>
+          <a href="static/pdfs/figure_s4_cases.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Sample 3 as a PDF">
+            <img src="static/images/figure_s4_cases.png" alt="Two urban navigation cases with video frames, trajectories, student predictions, and teacher reflections" loading="lazy" decoding="async"/>
+          </a>
+          <figcaption><a href="static/pdfs/figure_s4_cases.pdf" target="_blank" rel="noopener noreferrer">Open Sample 3</a></figcaption>
+        </figure>
+        <figure class="case-figure">
+          <h3 class="title is-5">Sample 4</h3>
+          <a href="static/pdfs/figure_s5_cases.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Sample 4 as a PDF">
+            <img src="static/images/figure_s5_cases.png" alt="Two urban navigation cases with video frames, trajectories, student predictions, and teacher reflections" loading="lazy" decoding="async"/>
+          </a>
+          <figcaption><a href="static/pdfs/figure_s5_cases.pdf" target="_blank" rel="noopener noreferrer">Open Sample 4</a></figcaption>
+        </figure>
+        <figure class="case-figure">
+          <h3 class="title is-5">Sample 5</h3>
+          <a href="static/pdfs/figure_s6_cases.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Sample 5 as a PDF">
+            <img src="static/images/figure_s6_cases.png" alt="Two urban navigation cases with video frames, trajectories, student predictions, and teacher reflections" loading="lazy" decoding="async"/>
+          </a>
+          <figcaption><a href="static/pdfs/figure_s6_cases.pdf" target="_blank" rel="noopener noreferrer">Open Sample 5</a></figcaption>
+        </figure>
+        <figure class="case-figure">
+          <h3 class="title is-5">Sample 6</h3>
+          <a href="static/pdfs/figure_s7_cases.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Sample 6 as a PDF">
+            <img src="static/images/figure_s7_cases.png" alt="Two urban navigation cases with video frames, trajectories, student predictions, and teacher reflections" loading="lazy" decoding="async"/>
+          </a>
+          <figcaption><a href="static/pdfs/figure_s7_cases.pdf" target="_blank" rel="noopener noreferrer">Open Sample 6</a></figcaption>
+        </figure>
+        </div>
       </div>
     </div>
   </div>
@@ -204,22 +241,53 @@
 <!-- End examples -->
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Real-world deployment</h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/aaai27.mp4"
-        type="video/mp4">
-      </video>
+<!-- Closed-loop simulation -->
+<section class="section simulation-section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3 has-text-centered">Closed-loop Simulation</h2>
+    <div class="simulation-grid">
+      <article class="simulation-panel" aria-labelledby="abot-title">
+        <h3 id="abot-title" class="title is-4">ABot</h3>
+        <video id="abot-video" class="simulation-video" controls playsinline preload="none" poster="static/images/simulation/abot_sample1.jpg">
+          <source src="static/videos/abot_sample1.mp4" type="video/mp4">
+        </video>
+        <div class="simulation-picker" role="group" aria-label="ABot samples">
+          <button type="button" aria-controls="abot-video" aria-pressed="true" data-video="static/videos/abot_sample1.mp4" data-poster="static/images/simulation/abot_sample1.jpg">Sample 1</button>
+          <button type="button" aria-controls="abot-video" aria-pressed="false" data-video="static/videos/abot_sample2.mp4" data-poster="static/images/simulation/abot_sample2.jpg">Sample 2</button>
+          <button type="button" aria-controls="abot-video" aria-pressed="false" data-video="static/videos/abot_sample3.mp4" data-poster="static/images/simulation/abot_sample3.jpg">Sample 3</button>
+          <button type="button" aria-controls="abot-video" aria-pressed="false" data-video="static/videos/abot_sample4.mp4" data-poster="static/images/simulation/abot_sample4.jpg">Sample 4</button>
+        </div>
+      </article>
+      <article class="simulation-panel" aria-labelledby="isaac-title">
+        <h3 id="isaac-title" class="title is-4">Isaac</h3>
+        <video id="isaac-video" class="simulation-video" controls playsinline preload="none" poster="static/images/simulation/isaac_sample1.jpg">
+          <source src="static/videos/isaac_sample1.mp4" type="video/mp4">
+        </video>
+        <div class="simulation-picker" role="group" aria-label="Isaac samples">
+          <button type="button" aria-controls="isaac-video" aria-pressed="true" data-video="static/videos/isaac_sample1.mp4" data-poster="static/images/simulation/isaac_sample1.jpg">Sample 1</button>
+          <button type="button" aria-controls="isaac-video" aria-pressed="false" data-video="static/videos/isaac_sample2.mp4" data-poster="static/images/simulation/isaac_sample2.jpg">Sample 2</button>
+          <button type="button" aria-controls="isaac-video" aria-pressed="false" data-video="static/videos/isaac_sample3.mp4" data-poster="static/images/simulation/isaac_sample3.jpg">Sample 3</button>
+          <button type="button" aria-controls="isaac-video" aria-pressed="false" data-video="static/videos/isaac_sample4.mp4" data-poster="static/images/simulation/isaac_sample4.jpg">Sample 4</button>
+          <button type="button" aria-controls="isaac-video" aria-pressed="false" data-video="static/videos/isaac_sample5.mp4" data-poster="static/images/simulation/isaac_sample5.jpg">Sample 5</button>
+          <button type="button" aria-controls="isaac-video" aria-pressed="false" data-video="static/videos/isaac_sample6.mp4" data-poster="static/images/simulation/isaac_sample6.jpg">Sample 6</button>
+        </div>
+      </article>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End closed-loop simulation -->
+
+
+<!-- Real-world deployment -->
+<section class="section real-world-section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered real-world-title">Real-world Deployment</h2>
+    <video class="real-world-video" autoplay controls muted loop playsinline preload="metadata">
+      <source src="static/videos/aaai27.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+<!-- End real-world deployment -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
