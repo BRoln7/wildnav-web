@@ -260,6 +260,20 @@ section img {
   border-radius: 8px;
 }
 
+.real-world-comparison {
+  margin: 3rem 0 0;
+}
+
+.real-world-comparison a,
+.real-world-comparison img {
+  display: block;
+  width: 100%;
+}
+
+.real-world-comparison img {
+  height: auto;
+}
+
 @media screen and (max-width: 900px) {
   .simulation-grid {
     grid-template-columns: 1fr;
