@@ -261,7 +261,7 @@ section img {
 }
 
 .real-world-comparison {
-  margin: 3rem 0 0;
+  margin: 5rem 0 0;
 }
 
 .real-world-comparison a,
@@ -287,6 +287,10 @@ section img {
 }
 
 @media screen and (max-width: 600px) {
+  .real-world-comparison {
+    margin-top: 3.5rem;
+  }
+
   .examples-grid {
     grid-template-columns: 1fr;
   }
